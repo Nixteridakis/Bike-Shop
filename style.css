@@ -1,0 +1,305 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  font-size: 46px;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin: 5px;
+}
+h3 {
+  font-size: 15px;
+  font-weight: 200;
+  text-align: center;
+  margin: 0;
+  color: #413f40;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0px;
+}
+h5 {
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+}
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start]12fr);
+}
+#header {
+  grid-column: col-start/span 12;
+  height: 60px;
+  background-color: #e5625e;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+#header #header-img {
+  height: 100%;
+}
+#header #header-img img {
+  max-height: 60%;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+#header #nav-bar {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  height: 100%;
+}
+#header #nav-bar > .nav-link {
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+#header #nav-bar > :first-child {
+  margin-right: auto;
+  color: #f3f2f2;
+}
+#header #nav-bar a {
+  text-decoration: none;
+  color: #f3f2f2;
+}
+.main-head {
+  grid-column: col-start/span 12;
+  height: 300px;
+  position: relative;
+}
+.main-head .title {
+  position: absolute;
+  width: 100%;
+  top: 90px;
+}
+.main-head .title .backdrop {
+  width: 245px;
+  height: 60px;
+  background: #e5625e;
+  z-index: -1;
+  margin: -85px auto;
+}
+.main-head .main-image {
+  min-height: 100%;
+  background: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/91/58/0257e089b530a3c.jpg");
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+.headers {
+  position: relative;
+  margin: 40px 0px;
+}
+#about-us {
+  grid-column: col-start/span 12;
+  padding-bottom: 40px;
+  height: 100%;
+}
+#about-us .reasons {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+#about-us .reasons div[class^="reason"], #about-us .reasons div[class*="reason"] {
+  display: grid;
+  grid-template-columns: minmax(70px, 200px);
+  grid-row-gap: 5px;
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 45px;
+}
+#about-us .reasons div[class^="reason"] img, #about-us .reasons div[class*="reason"] img {
+  display: block;
+  max-width: 35%;
+  align-self: flex-end;
+}
+#our-works {
+  grid-column: col-start/span 12;
+  background-color: #252525;
+}
+#our-works h2 {
+  color: #fdfcfd;
+}
+#our-works h3 {
+  color: #aea7aa;
+}
+#our-works #video {
+  height: 40vw;
+  width: 100%;
+  margin-bottom: 60px;
+}
+#our-works #video iframe {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+#pricing {
+  grid-column: col-start/span 12;
+}
+#pricing .pricing-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#pricing .pricing-wrapper .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #292423;
+}
+#pricing .pricing-wrapper .price .price-name {
+  width: 100%;
+  font-weight: 300;
+  font-size: 15px;
+  color: #f3f2f2;
+}
+#pricing .pricing-wrapper .price .price-name::first-line {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 20px;
+}
+#pricing .pricing-wrapper .price .price-number {
+  color: #c3c1c1;
+  font-size: 15px;
+  font-weight: 100;
+}
+#pricing .pricing-wrapper .price .price-number::first-line {
+  font-size: 18px;
+  font-weight: 500;
+}
+#pricing .pricing-wrapper .price-info {
+  background-color: #e5e2de;
+  padding: 12px 0;
+}
+#pricing .pricing-wrapper .price-info .info-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 8px;
+}
+#pricing .pricing-wrapper .price-info .info-box > * {
+  margin: 0;
+  align-self: baseline;
+  font-size: 14px;
+  font-weight: 300;
+}
+#pricing .pricing-wrapper .price-info .info-box > :first-child {
+  font-size: 15px;
+  font-weight: 500;
+}
+#pricing .pricing-wrapper div[class^="price-box"], #pricing .pricing-wrapper div[class*="price-box"] {
+  width: 200px;
+  margin-bottom: 40px;
+}
+#footer {
+  grid-column: col-start/span 12;
+  height: 180px;
+  background-color: #252525;
+}
+#footer #form {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#footer #form h2 {
+  margin: 0;
+  color: #f3f2f2;
+  text-align: right;
+}
+#footer #form #email {
+  width: 250px;
+  margin: 15px 0;
+  text-align: right;
+  padding-right: 5px;
+}
+#footer #form #email::placeholder {
+  text-align: right;
+  padding-right: 5px;
+}
+#footer #form #submit {
+  background: #e5625e;
+  color: #f3f2f2;
+  border: 1px solid #e5625e;
+  border-radius: 15px;
+  width: 100px;
+  height: 30px;
+}
+#footer #form #submit:hover {
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  #about-us .reasons {
+    flex-direction: row;
+  }
+  #about-us .reasons div[class^="reason"], #about-us .reasons div[class*="reason"] {
+    grid-template-rows: minmax(20px, 60px) minmax(50px, 140px);
+    margin: 25px;
+  }
+  #about-us .reasons .text {
+    display: flex;
+    flex-direction: column;
+  }
+  #about-us .reasons .text > * {
+    flex-basis: 40px;
+  }
+  #pricing .pricing-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #pricing .pricing-wrapper div[class^="price-box"], #pricing .pricing-wrapper div[class*="price-box"] {
+    flex-basis: 250px;
+    margin: 0px 10px;
+  }
+}
+@media (min-width: 1024px) {
+  #header {
+    grid-column: col-start 3/span 8;
+  }
+  .main-head {
+    grid-column: col-start 3/span 8;
+  }
+  #about-us {
+    grid-column: col-start 3/span 8;
+  }
+  #about-us .reasons {
+    padding: 10px 50px;
+  }
+  #about-us .reasons div[class^="reason"], #about-us .reasons div[class*="reason"] {
+    grid-template-columns: minmax(40px, 80px) 135px;
+    justify-items: flex-start;
+  }
+  #about-us .reasons div[class^="reason"] img, #about-us .reasons div[class*="reason"] img {
+    max-width: 50%;
+    align-self: flex-start;
+    justify-self: center;
+    margin-top: 10px;
+  }
+  #about-us .reasons div[class^="reason"] .text, #about-us .reasons div[class*="reason"] .text {
+    text-align: left;
+  }
+  #our-works {
+    grid-column: col-start 3/span 8;
+  }
+  #pricing {
+    grid-column: col-start 3/span 8;
+  }
+  #footer {
+    grid-column: col-start 3/span 8;
+  }
+}
